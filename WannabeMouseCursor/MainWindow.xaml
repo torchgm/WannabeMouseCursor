@@ -1,0 +1,25 @@
+﻿<Window x:Class="WannabeMouseCursor.MainWindow"
+        x:Name="bees"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WannabeMouseCursor"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="WannabeMouseCursor" Height="250" Width="214" WindowStyle="None">
+    <Grid>
+        <Rectangle Fill="#FFFFBEDF" HorizontalAlignment="Left" Opacity="0.5" Height="120" Stroke="DeepPink" VerticalAlignment="Top" Width="214" Margin="0,130,0,0"/>
+        <TextBox x:Name="OffsetTextBox" HorizontalAlignment="Left" Height="23" Margin="0,156,0,0" FontFamily="Comic Sans MS" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="68" Foreground="#FFFFAEFF" Background="#7FDFADEA" BorderBrush="#FF8C00A2"/>
+        <Label x:Name="OffsetLabel" Content="Offset" HorizontalAlignment="Left" Margin="0,130,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Foreground="#FFFFAEFF"/>
+        <TextBox x:Name="UpdateTextBox" HorizontalAlignment="Left" Height="23" Margin="73,156,0,0" FontFamily="Comic Sans MS" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="68" Foreground="#FFFFAEFF" Background="#7FDFADEA" BorderBrush="#FF8C00A2"/>
+        <Label x:Name="UpdateLabel" Content="Update" HorizontalAlignment="Left" Margin="73,130,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Foreground="#FFFFAEFF"/>
+        <TextBox x:Name="SizeTextBox" HorizontalAlignment="Left" Height="23" Margin="146,156,0,0" FontFamily="Comic Sans MS" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="68" Foreground="#FFFFAEFF" Background="#7FDFADEA" BorderBrush="#FF8C00A2"/>
+        <Label x:Name="SizeLabel" Content="Size" HorizontalAlignment="Left" Margin="146,130,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Foreground="#FFFFAEFF"/>
+
+        <Button x:Name="button" Content="Start!!" Margin="0,184,0,0" VerticalAlignment="Top" Click="button_Click" Height="66" FontFamily="Comic Sans MS" FontSize="36" FontStyle="Italic" Foreground="#FFFFAEFF" Background="#7FDFADEA" BorderBrush="#FF8C00A2"/>
+
+        <Rectangle x:Name="PointyThing" Fill="HotPink" HorizontalAlignment="Left"  Stroke="Black" VerticalAlignment="Top" Height="12" Width="12" Visibility="Hidden"/>
+    </Grid>
+</Window>
